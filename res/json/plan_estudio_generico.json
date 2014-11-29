@@ -1,0 +1,35 @@
+{
+   "carrera":{
+      "nombre":"ingenieria",
+      "planDeEstudio":{
+         "nombre":"Plan de estudio",
+         "anio":"2008",
+         "materias":[
+            {
+               "nombre":"analisis 1",
+               "codigo":"1",
+               "cuatrimestre":"1",
+               "anio":"1"
+            },
+            {
+               "nombre":"Fisica 1",
+               "codigo":"2",
+               "cuatrimestre":"2",
+               "anio":"1"
+            },
+            {
+               "nombre":"Analisi 2",
+               "codigo":"3",
+               "cuatrimestre":"1",
+               "anio":"2"
+            },
+            {
+               "nombre":"Fisica 2",
+               "codigo":"4",
+               "cuatrimestre":"2",
+               "anio":"2"
+            }
+         ]
+      }
+   }
+}
