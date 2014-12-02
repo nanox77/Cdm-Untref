@@ -28,6 +28,42 @@
                "code":"4",
                "quarter":"2",
                "year":"2"
+            },
+            {
+               "name":"Analisis 3",
+               "code":"5",
+               "quarter":"1",
+               "year":"3"
+            },
+            {
+               "name":"Fisica 3",
+               "code":"6",
+               "quarter":"2",
+               "year":"3"
+            },
+            {
+               "name":"Analisis 4",
+               "code":"7",
+               "quarter":"1",
+               "year":"4"
+            },
+            {
+               "name":"Fisica 4",
+               "code":"8",
+               "quarter":"2",
+               "year":"4"
+            },
+            {
+               "name":"Analisis 5",
+               "code":"9",
+               "quarter":"1",
+               "year":"5"
+            },
+            {
+               "name":"Fisica 5",
+               "code":"10",
+               "quarter":"2",
+               "year":"5"
             }
          ]
       }
