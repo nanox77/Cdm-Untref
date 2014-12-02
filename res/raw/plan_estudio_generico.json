@@ -6,7 +6,7 @@
          "anio":"2008",
          "materias":[
             {
-               "nombre":"analisis 1",
+               "nombre":"Analisis 1",
                "codigo":"1",
                "cuatrimestre":"1",
                "anio":"1"
@@ -18,7 +18,7 @@
                "anio":"1"
             },
             {
-               "nombre":"Analisi 2",
+               "nombre":"Analisis 2",
                "codigo":"3",
                "cuatrimestre":"1",
                "anio":"2"
