@@ -3,6 +3,7 @@ package ar.edu.untref.cdm.activity.fragment;
 import java.util.List;
 
 import android.os.Bundle;
+import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -11,7 +12,7 @@ import ar.edu.untref.cdm.R;
 import ar.edu.untref.cdm.activity.component.SubjectListViewAdapter;
 import ar.edu.untref.cdm.domain.Subject;
 
-public class YearAcademicFragment extends GenericFragment {
+public class YearAcademicFragment extends Fragment {
 
 	private List<Subject> subjects;
 
@@ -27,11 +28,6 @@ public class YearAcademicFragment extends GenericFragment {
 		SubjectListViewAdapter adapter = new SubjectListViewAdapter(subjects);
 		subjectListView.setAdapter(adapter);
 		return rootView;
-	}
-
-	@Override
-	public String getTitle() {
-		return "Year";
 	}
 
 }

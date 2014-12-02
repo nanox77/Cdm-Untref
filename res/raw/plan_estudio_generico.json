@@ -1,33 +1,33 @@
 {
-   "carrera":{
-      "nombre":"ingenieria",
-      "planDeEstudio":{
-         "nombre":"Plan de estudio",
-         "anio":"2008",
-         "materias":[
+   "career":{
+      "name":"ingenieria",
+      "studyPlan":{
+         "name":"Plan de estudio",
+         "year":"2008",
+         "subjects":[
             {
-               "nombre":"Analisis 1",
-               "codigo":"1",
-               "cuatrimestre":"1",
-               "anio":"1"
+               "name":"Analisis 1",
+               "code":"1",
+               "quarter":"1",
+               "year":"1"
             },
             {
-               "nombre":"Fisica 1",
-               "codigo":"2",
-               "cuatrimestre":"2",
-               "anio":"1"
+               "name":"Fisica 1",
+               "code":"2",
+               "quarter":"2",
+               "year":"1"
             },
             {
-               "nombre":"Analisis 2",
-               "codigo":"3",
-               "cuatrimestre":"1",
-               "anio":"2"
+               "name":"Analisis 2",
+               "code":"3",
+               "quarter":"1",
+               "year":"2"
             },
             {
-               "nombre":"Fisica 2",
-               "codigo":"4",
-               "cuatrimestre":"2",
-               "anio":"2"
+               "name":"Fisica 2",
+               "code":"4",
+               "quarter":"2",
+               "year":"2"
             }
          ]
       }

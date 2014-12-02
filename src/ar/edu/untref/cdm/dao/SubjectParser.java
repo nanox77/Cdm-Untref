@@ -29,15 +29,15 @@ public class SubjectParser {
 
 	public Career parse() throws JSONException {
 		JSONObject jObject = new JSONObject(json);
-		JSONObject jCareer = jObject.getJSONObject("carrera");
+		JSONObject jCareer = jObject.getJSONObject("career");
 
 		Career career = parseCareer(jCareer);
 
-		JSONObject jStudyPlan = jCareer.getJSONObject("planDeEstudio");
+		JSONObject jStudyPlan = jCareer.getJSONObject("studyPlan");
 
 		StudyPlan studyPlan = parseStudyPlan(jStudyPlan);
 
-		JSONArray jSubjects = jStudyPlan.getJSONArray("materias");
+		JSONArray jSubjects = jStudyPlan.getJSONArray("subjects");
 		List<Subject> subjects = parseSubjects(jSubjects);
 
 		career.setStudyPlans(studyPlan);
@@ -49,14 +49,14 @@ public class SubjectParser {
 	private StudyPlan parseStudyPlan(JSONObject jStudyPlan)
 			throws JSONException {
 		StudyPlan studyPlan = new StudyPlan();
-		studyPlan.setName(jStudyPlan.getString("nombre"));
-		studyPlan.setYear(jStudyPlan.getInt("anio"));
+		studyPlan.setName(jStudyPlan.getString("name"));
+		studyPlan.setYear(jStudyPlan.getInt("year"));
 		return studyPlan;
 	}
 
 	private Career parseCareer(JSONObject jCareer) throws JSONException {
 		Career career = new Career();
-		career.setName(jCareer.getString("nombre"));
+		career.setName(jCareer.getString("name"));
 		return career;
 	}
 
@@ -67,10 +67,10 @@ public class SubjectParser {
 		for (int i = 0; i < jSubjects.length(); i++) {
 			subject = new Subject();
 			JSONObject jSubject = jSubjects.getJSONObject(i);
-			String name = jSubject.getString("nombre");
-			Integer code = jSubject.getInt("codigo");
-			Integer quarter = jSubject.getInt("cuatrimestre");
-			Integer year = jSubject.getInt("anio");
+			String name = jSubject.getString("name");
+			Integer code = jSubject.getInt("code");
+			Integer quarter = jSubject.getInt("quarter");
+			Integer year = jSubject.getInt("year");
 			subject.setName(name);
 			subject.setCode(code);
 			subject.setQuarter(quarter);

@@ -7,10 +7,10 @@ import java.util.List;
 import org.json.JSONException;
 
 import android.os.Bundle;
+import android.support.v4.app.Fragment;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.ActionBarActivity;
 import ar.edu.untref.cdm.R;
-import ar.edu.untref.cdm.activity.fragment.GenericFragment;
 import ar.edu.untref.cdm.activity.fragment.YearAcademicFragment;
 import ar.edu.untref.cdm.activity.fragment.YearAcademicViewPagerAdapter;
 import ar.edu.untref.cdm.dao.SubjectParser;
@@ -41,8 +41,8 @@ public class MainActivity extends ActionBarActivity {
 		viewPager.setAdapter(yearAcademicAdapter);
 	}
 
-	private List<GenericFragment> getFragments() {
-		List<GenericFragment> fragments = new ArrayList<GenericFragment>();
+	private List<Fragment> getFragments() {
+		List<Fragment> fragments = new ArrayList<Fragment>();
 		Integer yearAcademics = service.getYearAcademic();
 		for (int i = 1; i <= yearAcademics; i++) {
 			List<Subject> subjectsByYear = service.findSubjectsByYear(i);

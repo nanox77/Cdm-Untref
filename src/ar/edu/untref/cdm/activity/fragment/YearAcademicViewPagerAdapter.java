@@ -8,10 +8,10 @@ import android.support.v4.app.FragmentStatePagerAdapter;
 
 public class YearAcademicViewPagerAdapter extends FragmentStatePagerAdapter {
 
-	private List<GenericFragment> fragments;
+	private List<Fragment> fragments;
 
 	public YearAcademicViewPagerAdapter(FragmentManager fm,
-			List<GenericFragment> fragments) {
+			List<Fragment> fragments) {
 		super(fm);
 		this.fragments = fragments;
 	}
@@ -28,6 +28,7 @@ public class YearAcademicViewPagerAdapter extends FragmentStatePagerAdapter {
 
 	@Override
 	public CharSequence getPageTitle(int position) {
-		return "#" + fragments.get(position).getTitle();
+		int i = position + 1;
+		return i + "° año";
 	}
 }
